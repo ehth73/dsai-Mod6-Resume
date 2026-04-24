@@ -35,7 +35,7 @@ def employer_chatbot(skill_query: str, top_k: int):
         if not resumes:
             return "No resumes are available. Please ask the administrator to upload resumes first.", pd.DataFrame(), None, None
 
-        ranked_df = rank_candidates(skill_query, resumes, top_k=int(top_k))
+        ranked_df = rank_candidates(skill_query, resumes, top_k=top_k)
         candidate_report_path = save_candidate_report(ranked_df, skill_query, str(REPORT_DIR))
         market_report_path = generate_market_skill_report(resumes, str(REPORT_DIR))
 
