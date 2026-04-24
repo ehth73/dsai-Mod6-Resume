@@ -54,7 +54,7 @@ def admin_upload_resume(files):
         if not files:
             return "No files selected.", list_uploaded_resumes()
 
-        allowed_ext = {".pdf", ".docx", ".txt", ".doc", ".odt"}
+        allowed_ext = {".pdf", ".docx", ".txt", ".doc", ".odt", ".csv"}
         uploaded = []
         rejected = []
 
