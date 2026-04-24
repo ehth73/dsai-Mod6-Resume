@@ -1,6 +1,11 @@
+import sys
+from pathlib import Path
+
+# Add the script's directory to the path to allow relative imports
+sys.path.insert(0, str(Path(__file__).parent))
+
 import os
 import shutil
-from pathlib import Path
 
 import gradio as gr
 import pandas as pd
