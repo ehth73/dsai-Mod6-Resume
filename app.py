@@ -131,7 +131,7 @@ with gr.Blocks(title="Resume Matching Chatbot") as demo:
         )
 
     with gr.Tab("Admin Resume Upload"):
-        gr.Markdown("Upload PDF, DOCX, or TXT resumes into the resume repository.")
+        gr.Markdown("Upload PDF, DOCX, DOC or TXT resumes into the resume repository.")
         upload_files = gr.File(label="Upload Resumes", file_count="multiple")
         upload_button = gr.Button("Upload Resume Files")
         upload_status = gr.Textbox(label="Upload Status")
